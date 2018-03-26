@@ -46,9 +46,15 @@ table {
   border-spacing: 0; }
 
 #navBar {
-  background-color: #FFF;
+  background-color: #F00;
   width: 100vw;
   height: 80px; }
+  #navBar #navBarContent {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7em; }
 
 body {
   height: 100vh; }

@@ -3,7 +3,19 @@
 
 //-----------ID's------------//
 #navBar{
-  background-color: #FFF;
+  background-color: #F00;
   width: 100vw;
   height: 80px;
+
+  #navBarContent{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7em;
+
+      .navBarDD{
+
+      }
+  }
 }
