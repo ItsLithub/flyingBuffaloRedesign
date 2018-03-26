@@ -1,5 +1,10 @@
 //NavBar CSS
 
+//--------CLASSES------------//
+.navBarDD{
+  position: absolute;
+  display: none;
+}
 
 //-----------ID's------------//
 #navBar{
@@ -13,9 +18,12 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1.7em;
-
-      .navBarDD{
-
+      li{
+        &:hover{
+          .navBarDD{
+            display: block;
+          }
+        }
       }
   }
 }
