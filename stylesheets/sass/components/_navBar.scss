@@ -1,14 +1,23 @@
 //NavBar CSS
 
+//---------VARIABLES---------//
+$hoverColor: #F00;
+
 //--------CLASSES------------//
 .navBarDD{
   position: absolute;
   display: none;
+    ul{
+      display: flex;
+      flex-direction: column;
+        li{
+          margin: 20px auto 10px  auto;
+        }
+    }
 }
 
 //-----------ID's------------//
 #navBar{
-  background-color: #F00;
   width: 100vw;
   height: 80px;
 
@@ -22,6 +31,7 @@
         &:hover{
           .navBarDD{
             display: block;
+            background-color: $hoverColor;
           }
         }
       }

@@ -48,9 +48,13 @@ table {
 .navBarDD {
   position: absolute;
   display: none; }
+  .navBarDD ul {
+    display: flex;
+    flex-direction: column; }
+    .navBarDD ul li {
+      margin: 20px auto 10px  auto; }
 
 #navBar {
-  background-color: #F00;
   width: 100vw;
   height: 80px; }
   #navBar #navBarContent {
@@ -60,7 +64,8 @@ table {
     align-items: center;
     font-size: 1.7em; }
     #navBar #navBarContent li:hover .navBarDD {
-      display: block; }
+      display: block;
+      background-color: #F00; }
 
 body {
   height: 100vh; }
