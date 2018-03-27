@@ -54,6 +54,10 @@ table {
     .navBarDD ul li {
       margin: 20px auto 10px  auto; }
 
+.navBarLogo {
+  height: 80px;
+  width: 200px; }
+
 #navBar {
   width: 100vw;
   height: 80px; }
