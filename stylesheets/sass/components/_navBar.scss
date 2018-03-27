@@ -1,0 +1,44 @@
+//NavBar CSS
+
+//---------VARIABLES---------//
+$hoverColor: #F00;
+
+//--------CLASSES------------//
+.navBarDD{
+  position: absolute;
+  display: none;
+    ul{
+      display: flex;
+      flex-direction: column;
+        li{
+          margin: 20px auto 10px  auto;
+        }
+    }
+}
+
+.navBarLogo{
+  height: 80px;
+  width: 200px;
+}
+
+//-----------ID's------------//
+#navBar{
+  width: 100vw;
+  height: 80px;
+
+  #navBarContent{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7em;
+      li{
+        &:hover{
+          .navBarDD{
+            display: block;
+            background-color: $hoverColor;
+          }
+        }
+      }
+  }
+}
