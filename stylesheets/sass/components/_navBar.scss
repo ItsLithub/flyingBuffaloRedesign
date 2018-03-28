@@ -1,7 +1,7 @@
 //NavBar CSS
 
 //---------VARIABLES---------//
-$hoverColor: #F00;
+$hoverColor: #E6E6DB;
 
 //--------CLASSES------------//
 .navBarDD{
@@ -25,6 +25,7 @@ $hoverColor: #F00;
 #navBar{
   width: 100vw;
   height: 80px;
+  background-color: $hoverColor;
 
   #navBarContent{
     height: 100%;

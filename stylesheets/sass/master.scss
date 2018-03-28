@@ -3,7 +3,9 @@
 //IMPORTED PARTIALS
 @import 'components/reset';
 @import 'components/navBar';
+@import 'components/hero';
 //MASTER CONTROLS
 body{
   height: 100vh;
+  background-color: #E6E6DB;
 }

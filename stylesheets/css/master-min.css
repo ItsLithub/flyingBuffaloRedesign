@@ -60,7 +60,8 @@ table {
 
 #navBar {
   width: 100vw;
-  height: 80px; }
+  height: 80px;
+  background-color: #E6E6DB; }
   #navBar #navBarContent {
     height: 100%;
     display: flex;
@@ -69,7 +70,13 @@ table {
     font-size: 1.7em; }
     #navBar #navBarContent li:hover .navBarDD {
       display: block;
-      background-color: #F00; }
+      background-color: #E6E6DB; }
+
+.hero {
+  width: 100vw;
+  height: 56vw;
+  background: linear-gradient(to bottom, transparent, transparent 30px, #E6E6DB 140%, #E6E6DB), url("imgs/elven lords.jpg"); }
 
 body {
-  height: 100vh; }
+  height: 100vh;
+  background-color: #E6E6DB; }
