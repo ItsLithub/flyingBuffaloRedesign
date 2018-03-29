@@ -71,29 +71,36 @@ table {
   background-color: #E6E6DB;
   font-family: 'Helvetica Neue', sans-serif;
   user-select: none; }
-  #navBar #navBarContent {
+  #navBar .navBarContent {
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.7em; }
+    font-size: 1.7em;
+    position: relative; }
     @media (max-width: 940px) {
-      #navBar #navBarContent {
+      #navBar .navBarContent {
         display: none; } }
-    #navBar #navBarContent li:hover .navBarDD {
+    #navBar .navBarContent li:hover .navBarDD {
       display: block;
       background-color: #E6E6DB; }
-
-#mobileNavBar {
-  display: none;
-  justify-content: space-between; }
-  @media (max-width: 940px) {
-    #mobileNavBar {
-      display: flex; } }
-  #mobileNavBar #hamburgerMenu {
-    font-size: 4em; }
-    #mobileNavBar #hamburgerMenu:hover #navBarContent {
-      display: block; }
+  #navBar #mobileNavBar {
+    display: none;
+    justify-content: space-between; }
+    @media (max-width: 940px) {
+      #navBar #mobileNavBar {
+        display: flex; } }
+    #navBar #mobileNavBar #hamburgerMenu span {
+      font-size: 4em; }
+    #navBar #mobileNavBar #hamburgerMenu:hover .navBarContent {
+      display: flex;
+      flex-direction: column;
+      background-color: #E6E6DB;
+      z-index: 2; }
+      #navBar #mobileNavBar #hamburgerMenu:hover .navBarContent .navBarDD {
+        top: 0;
+        left: 181px;
+        z-index: 3; }
 
 .hero {
   width: 100vw;
@@ -250,7 +257,8 @@ body {
   top: 50%;
   left: -15%;
   user-select: none;
-  transition: .2s; }
+  transition: .2s;
+  z-index: 1; }
   .button:hover {
     background-color: black;
     transition: .2s;

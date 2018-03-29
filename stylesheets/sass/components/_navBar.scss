@@ -17,6 +17,7 @@ $hoverColor: #E6E6DB;
           cursor: pointer;
           transition: .2s;
 
+
           &:hover{
             color: lighten(black, 50%);
             transition: .2s;
@@ -38,43 +39,53 @@ $hoverColor: #E6E6DB;
   font-family: 'Helvetica Neue', sans-serif;
   user-select: none;
 
-  #navBarContent{
+  .navBarContent{
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 1.7em;
+    position: relative;
 
     @media (max-width: 940px){
       display: none;
     }
 
-      li{
-        &:hover{
+    li{
+      &:hover{
 
-          .navBarDD{
-            display: block;
-            background-color: $hoverColor;
-          }
+        .navBarDD{
+          display: block;
+          background-color: $hoverColor;
         }
       }
-  }
-}
-
-#mobileNavBar{
-  display: none;
-  justify-content: space-between;
-
-  @media (max-width: 940px){
-    display: flex;
+    }
   }
 
-  #hamburgerMenu{
-    font-size: 4em;
-    &:hover{
-      #navBarContent{
-        display: block;
-        // flex-direction: column;
+  #mobileNavBar{
+    display: none;
+    justify-content: space-between;
+
+    @media (max-width: 940px){
+      display: flex;
+    }
+
+    #hamburgerMenu{
+      span{
+      font-size: 4em;
+      }
+      &:hover{
+        .navBarContent{
+          display: flex;
+          flex-direction: column;
+          background-color: $hoverColor;
+          z-index: 2;
+          .navBarDD{
+            top: 0;
+            left: 181px;
+            z-index: 3;
+          }
+        }
       }
     }
   }
