@@ -89,10 +89,14 @@ table {
     @media (max-width: 940px) {
       #navBar #mobileNavBar {
         display: flex; } }
-    #navBar #mobileNavBar #hamburgerMenu {
-      font-size: 4em; }
-      #navBar #mobileNavBar #hamburgerMenu .navBarContent {
-        display: none; }
+    #navBar #mobileNavBar #hamburgerMenu:hover .navBarContent {
+      display: flex;
+      flex-direction: column;
+      background-color: #E6E6DB; }
+      #navBar #mobileNavBar #hamburgerMenu:hover .navBarContent .navBarDD {
+        top: 0;
+        left: 130px;
+        z-index: 2; }
 
 .hero {
   width: 100vw;
