@@ -1,0 +1,37 @@
+#news{
+  height: 420px;//haha
+  width: 940px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 940px){
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+#newsHeader{
+  width: 525px;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  @media (max-width: 940px){
+    width: 300px;
+  }
+}
+
+.newsPic{
+  &:hover{
+    cursor: pointer;
+  }
+
+  @media (max-width: 940px){
+    display: none;
+  }
+}
