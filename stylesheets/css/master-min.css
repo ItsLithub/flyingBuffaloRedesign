@@ -172,6 +172,42 @@ table {
   .newsPic {
     display: none; } }
 
+#footer {
+  background-color: #202020;
+  color: white;
+  font-size: 2em;
+  user-select: none; }
+  #footer ul {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 1200px) {
+      #footer ul {
+        flex-direction: column; } }
+    #footer ul li {
+      margin: 25px; }
+      @media (max-width: 1200px) {
+        #footer ul li {
+          font-size: .5em;
+          margin: 0 0 25px 0; } }
+
+#footerLogo {
+  height: 80px;
+  width: 200px;
+  filter: invert(1); }
+
+.footerItem {
+  cursor: pointer; }
+
+@media (max-width: 1200px) {
+  .footerVert {
+    display: none; } }
+
+.footerHoriz {
+  display: none; }
+  @media (max-width: 1200px) {
+    .footerHoriz {
+      display: inline-block; } }
+
 body {
   height: 100vh;
   background-color: #E6E6DB; }
