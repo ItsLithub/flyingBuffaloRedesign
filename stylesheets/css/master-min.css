@@ -71,29 +71,28 @@ table {
   background-color: #E6E6DB;
   font-family: 'Helvetica Neue', sans-serif;
   user-select: none; }
-  #navBar #navBarContent {
+  #navBar .navBarContent {
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 1.7em; }
     @media (max-width: 940px) {
-      #navBar #navBarContent {
+      #navBar .navBarContent {
         display: none; } }
-    #navBar #navBarContent li:hover .navBarDD {
+    #navBar .navBarContent li:hover .navBarDD {
       display: block;
       background-color: #E6E6DB; }
-
-#mobileNavBar {
-  display: none;
-  justify-content: space-between; }
-  @media (max-width: 940px) {
-    #mobileNavBar {
-      display: flex; } }
-  #mobileNavBar #hamburgerMenu {
-    font-size: 4em; }
-    #mobileNavBar #hamburgerMenu:hover #navBarContent {
-      display: block; }
+  #navBar #mobileNavBar {
+    display: none;
+    justify-content: space-between; }
+    @media (max-width: 940px) {
+      #navBar #mobileNavBar {
+        display: flex; } }
+    #navBar #mobileNavBar #hamburgerMenu {
+      font-size: 4em; }
+      #navBar #mobileNavBar #hamburgerMenu .navBarContent {
+        display: none; }
 
 .hero {
   width: 100vw;

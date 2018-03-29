@@ -38,7 +38,7 @@ $hoverColor: #E6E6DB;
   font-family: 'Helvetica Neue', sans-serif;
   user-select: none;
 
-  #navBarContent{
+  .navBarContent{
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -59,22 +59,20 @@ $hoverColor: #E6E6DB;
         }
       }
   }
-}
 
-#mobileNavBar{
-  display: none;
-  justify-content: space-between;
+  #mobileNavBar{
+    display: none;
+    justify-content: space-between;
 
-  @media (max-width: 940px){
-    display: flex;
-  }
+    @media (max-width: 940px){
+      display: flex;
+    }
 
-  #hamburgerMenu{
-    font-size: 4em;
-    &:hover{
-      #navBarContent{
-        display: block;
-        // flex-direction: column;
+    #hamburgerMenu{
+      font-size: 4em;
+
+      .navBarContent{
+        display: none;
       }
     }
   }
