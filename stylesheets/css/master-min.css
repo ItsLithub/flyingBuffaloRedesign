@@ -47,12 +47,19 @@ table {
 
 .navBarDD {
   position: absolute;
-  display: none; }
+  display: none;
+  margin-left: -15px; }
   .navBarDD ul {
     display: flex;
     flex-direction: column; }
     .navBarDD ul li {
-      margin: 20px auto 10px  auto; }
+      text-align: left;
+      margin: 20px auto 10px  auto;
+      cursor: pointer;
+      transition: .2s; }
+      .navBarDD ul li:hover {
+        color: #807f7f;
+        transition: .2s; }
 
 .navBarLogo {
   height: 80px;
@@ -61,16 +68,32 @@ table {
 #navBar {
   width: 100vw;
   height: 80px;
-  background-color: #E6E6DB; }
+  background-color: #E6E6DB;
+  font-family: 'Helvetica Neue', sans-serif;
+  user-select: none; }
   #navBar #navBarContent {
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 1.7em; }
+    @media (max-width: 940px) {
+      #navBar #navBarContent {
+        display: none; } }
     #navBar #navBarContent li:hover .navBarDD {
       display: block;
       background-color: #E6E6DB; }
+
+#mobileNavBar {
+  display: none;
+  justify-content: space-between; }
+  @media (max-width: 940px) {
+    #mobileNavBar {
+      display: flex; } }
+  #mobileNavBar #hamburgerMenu {
+    font-size: 4em; }
+    #mobileNavBar #hamburgerMenu:hover #navBarContent {
+      display: block; }
 
 .hero {
   width: 100vw;
