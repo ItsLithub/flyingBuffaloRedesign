@@ -93,6 +93,31 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+#productsHolder {
+  width: 940px;
+  height: auto;
+  border: 1px solid black;
+  margin: -70px auto 25px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  #productsHolder .bigTile {
+    height: 300px;
+    width: 600px;
+    border: 1px solid red;
+    margin-top: 20px; }
+    @media (max-width: 700px) {
+      #productsHolder .bigTile {
+        width: 300px; } }
+  #productsHolder .smallTile {
+    height: 300px;
+    width: 300px;
+    margin: 20px 0 0 0;
+    border: 1px solid blue; }
+  @media (max-width: 960px) {
+    #productsHolder {
+      width: 300px; } }
+
 body {
   height: 100vh;
   background-color: #E6E6DB; }
