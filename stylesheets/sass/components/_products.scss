@@ -1,17 +1,17 @@
 #productsHolder{
   width: 940px;
   height: auto;
-  border: 1px solid black;
   margin: -70px auto 25px auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
+
   .bigTile{
     height: 300px;
     width: 600px;
-    border: 1px solid red;
     margin-top: 20px;
+    background-image: url('imgs/app banner.png');
 
     @media (max-width: 700px){
       width: 300px;
@@ -21,10 +21,28 @@
     height: 300px;
     width: 300px;
     margin: 20px 0 0 0;
-    border: 1px solid blue;
   }
 
   @media (max-width: 960px){
     width: 300px;
+    .bigTile{
+      background-image: url('imgs/app banner small.png');
+    }
+  }
+
+  #nuke{
+    background-image: url('imgs/nuke tile.png');
+  }
+
+  #tnt{
+    background-image: url('imgs/TnT tile.png');
+  }
+
+  #tshirt{
+    background-image: url('imgs/tshirt tile.png');
+  }
+
+  #traps{
+    background-image: url('imgs/traps tile.png');
   }
 }
