@@ -108,10 +108,14 @@ table {
     @media (max-width: 700px) {
       #productsHolder .bigTile {
         width: 300px; } }
+    #productsHolder .bigTile:hover .overlay {
+      display: block; }
   #productsHolder .smallTile {
     height: 300px;
     width: 300px;
     margin: 20px 0 0 0; }
+    #productsHolder .smallTile:hover .overlay {
+      display: block; }
   @media (max-width: 960px) {
     #productsHolder {
       width: 300px; }
@@ -125,6 +129,14 @@ table {
     background-image: url("imgs/tshirt tile.png"); }
   #productsHolder #traps {
     background-image: url("imgs/traps tile.png"); }
+
+.overlay {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .3;
+  display: none; }
 
 body {
   height: 100vh;
