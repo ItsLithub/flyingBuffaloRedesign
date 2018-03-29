@@ -93,6 +93,57 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+#productsHolder {
+  width: 940px;
+  height: auto;
+  margin: -70px auto 25px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  #productsHolder .bigTile {
+    height: 300px;
+    width: 600px;
+    margin-top: 20px;
+    background-image: url("imgs/app banner.png"); }
+    @media (max-width: 700px) {
+      #productsHolder .bigTile {
+        width: 300px; } }
+    #productsHolder .bigTile:hover .overlay {
+      display: block; }
+  #productsHolder .smallTile {
+    height: 300px;
+    width: 300px;
+    margin: 20px 0 0 0; }
+    #productsHolder .smallTile:hover .overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  @media (max-width: 960px) {
+    #productsHolder {
+      width: 300px; }
+      #productsHolder .bigTile {
+        background-image: url("imgs/app banner small.png"); } }
+  #productsHolder #nuke {
+    background-image: url("imgs/nuke tile.png"); }
+  #productsHolder #tnt {
+    background-image: url("imgs/TnT tile.png"); }
+  #productsHolder #tshirt {
+    background-image: url("imgs/tshirt tile.png"); }
+  #productsHolder #traps {
+    background-image: url("imgs/traps tile.png"); }
+
+.overlay {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  font-size: 1.25em;
+  font-family: sans-serif; }
+
 body {
   height: 100vh;
   background-color: #E6E6DB; }
@@ -115,4 +166,5 @@ body {
   transition: .2s; }
   .button:hover {
     background-color: black;
-    transition: .2s; }
+    transition: .2s;
+    cursor: pointer; }
