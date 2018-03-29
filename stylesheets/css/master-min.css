@@ -50,13 +50,17 @@ table {
   display: none;
   margin-left: -15px; }
   .navBarDD ul {
+    width: auto;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 0 20px; }
     .navBarDD ul li {
+      width: 100%;
       text-align: left;
       margin: 20px 10px 10px  10px;
       cursor: pointer;
-      transition: .2s; }
+      transition: .2s;
+      cursor: pointer; }
       .navBarDD ul li:hover {
         color: #807f7f;
         transition: .2s; }
@@ -95,12 +99,14 @@ table {
     #navBar #mobileNavBar #hamburgerMenu:hover .navBarContent {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       background-color: #E6E6DB;
       z-index: 2; }
+      #navBar #mobileNavBar #hamburgerMenu:hover .navBarContent li {
+        width: 100%; }
       #navBar #mobileNavBar #hamburgerMenu:hover .navBarContent .navBarDD {
         top: 0;
-        left: 181px;
-        z-index: 3; }
+        left: 181px; }
 
 .hero {
   width: 100vw;
@@ -221,7 +227,7 @@ table {
           margin: 0 0 25px 0; } }
 
 #footerLogo {
-  margin-top: 10px;
+  margin-top: 15px;
   height: 80px;
   width: 200px;
   filter: invert(1); }
