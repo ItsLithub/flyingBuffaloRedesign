@@ -30,6 +30,7 @@ body{
   left: -15%;
   user-select: none;
   transition: .2s;
+  z-index: 1;
 
   &:hover{
     background-color: black;

@@ -45,6 +45,7 @@ $hoverColor: #E6E6DB;
     justify-content: space-around;
     align-items: center;
     font-size: 1.7em;
+    position: relative;
 
     @media (max-width: 940px){
       display: none;
@@ -70,16 +71,19 @@ $hoverColor: #E6E6DB;
     }
 
     #hamburgerMenu{
-      // font-size: 4em;
+      span{
+      font-size: 4em;
+      }
       &:hover{
         .navBarContent{
           display: flex;
           flex-direction: column;
           background-color: $hoverColor;
+          z-index: 2;
           .navBarDD{
             top: 0;
-            left: 130px;
-            z-index: 2;
+            left: 181px;
+            z-index: 3;
           }
         }
       }
