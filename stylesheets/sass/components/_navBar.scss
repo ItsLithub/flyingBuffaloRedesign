@@ -9,18 +9,21 @@ $hoverColor: #E6E6DB;
   display: none;
   margin-left: -15px;
     ul{
+      width: auto;
       display: flex;
       flex-direction: column;
+      padding: 0 20px;
         li{
+          width: 100%;
           text-align: left;
-          margin: 20px auto 10px  auto;
-          cursor: pointer;
+          margin: 20px 10px 10px 10px;
           transition: .2s;
-
+          cursor: pointer;
 
           &:hover{
             color: lighten(black, 50%);
             transition: .2s;
+
           }
         }
     }
@@ -78,12 +81,16 @@ $hoverColor: #E6E6DB;
         .navBarContent{
           display: flex;
           flex-direction: column;
+          align-items: flex-start;
           background-color: $hoverColor;
           z-index: 2;
+          li{
+            width: 100%;
+          }
+
           .navBarDD{
             top: 0;
             left: 181px;
-            z-index: 3;
           }
         }
       }
